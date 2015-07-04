@@ -1,0 +1,94 @@
+.parallax{
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.parallax__group{
+	height: 80vh;
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+
+.parallax__layer{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.parallax__layer--base{
+	transform: translateZ(0);
+}
+
+.parallax__layer--back{
+	transform: translateZ(-1px) scale(2);
+}
+
+#fence-background{
+	margin-top:3vh;
+	height: 60vh;
+	width: 100vw;
+	background-image: url(<%= asset_path "fence.svg" %>);
+	opacity: 0.2;
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: 30%;
+}
+
+#northern-triangle-text{
+	margin-top:45vh;
+	padding: 0 10vw 0 10vw;
+	font-size: 24pt;
+	color: white;
+}
+
+#dollar-background{
+	margin-top:3vh;
+	width: 100vw;
+	line-height:200%;
+	font-size:256pt;
+	color: #25512a;
+	text-align:center;
+	opacity:0.4;
+}
+
+@media(max-width:600px){
+	#dollar-background p{
+		font-size: 128pt;
+	}
+}
+
+@media (max-width:400px ){
+	#northern-triangle-text{
+		margin-top: 10vh;
+		font-size: 14pt;
+	}
+	#dollar-background p{
+		font-size: 80pt;
+		line-height: 150%;
+	}
+	p#doll-text{
+		font-size: 14pt;
+		margin-top: 20vh;
+	}
+}
+
+#doll-text{
+	font-size:28pt;
+	color: white;
+	text-align:center;
+	margin-top:45vh;
+	padding: 0 10vw 0 10vw;
+}
+
+#back-1{
+	background-color: #b6432c;
+}
+
+#back-2{
+	background-color:#1dab2e;
+}

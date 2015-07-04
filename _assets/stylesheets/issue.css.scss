@@ -1,0 +1,59 @@
+.issue-wrapper{
+	// position: relative;
+	// padding-bottom: 60%;
+}
+
+.issue-container{
+	width: 100%;
+	background: #f96245;
+}
+
+#issue-title{
+	font-size: 48pt;
+	color: white;
+	margin: auto;
+	margin-top:10;
+	padding: 5% 15% 15%;
+	width:100%;
+	text-align: center;
+}
+
+@media(min-width:1000px){
+	#issue-title{
+		padding-bottom: 5%;
+	}
+}
+
+#circle-container{
+	text-align: center;
+	margin: auto;
+	max-width: 900px;
+}
+
+#circle1{
+	margin:auto;
+	margin-bottom: 10%;
+	max-width:400px;
+}
+#circle2{
+	margin: auto;
+	max-width: 400px;
+	padding-bottom: 3vh;
+}
+
+.stat-text{
+	display: block;
+	text-align:center;
+	margin-top: 3%;
+	color: white;
+	font-size: 32pt;
+}
+
+@media (max-width: 450px){
+	.stat-text{
+		font-size: 16pt;
+	}
+	#issue-title{
+		font-size: 22pt;
+	}
+}

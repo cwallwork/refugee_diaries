@@ -1,0 +1,152 @@
+$charcoal: #494949;
+
+.home{
+}
+
+.banner{
+	position: relative;
+	overflow: auto;
+	// min-height: 500px;
+	list-style: none;
+	text-align: center;
+	}	
+
+	ul{
+		float: left;
+	}
+			
+	li{
+			float: left;
+			list-style: none;
+			height: 80vh;
+			width: 100%;
+			text-align: center;
+		}
+
+.diaries-splash{
+	background-color: #a42437;
+	padding:30px;
+	margin: auto;
+}
+
+#world-pic{
+	clear: both;
+}
+
+.why-going{
+	background-color: #61c3ee
+}
+
+.why-going div{
+	padding: 4vh 4vw 4vh 4vw;
+}
+
+.why-going h1{
+	color:white;
+	margin-left: 10%;
+	margin-top: 0;
+	text-align:left;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+p.why-description{
+	font-size: 20pt;
+	color:white;
+	width: 50%;
+	text-align: left;
+	margin-bottom:20px;
+}
+
+@media (max-width: 820px){
+	#why-container p.why-description{
+		width: 100%;
+		font-size: 14pt;
+	}
+	.why-description a.why-going-button{
+		font-size: 14pt;
+		padding: 2px;
+	}
+	.site-header{
+		display:none;
+	}
+}
+
+.kat-ribbon{
+	// display: inline;
+	float: right;
+	z-index:-100;
+}
+
+@media (max-width: 1040px){
+	.kat-ribbon{
+		width:350px;
+	}
+}
+
+@media (max-width: 400px){
+	.kat-ribbon{
+		width:20vw;
+	}
+	#why-container p.why-description{
+		font-size: 10pt;
+	}
+	#why-container h1{
+		font-size: 14pt;
+	}
+	#why-container .why-going-button{
+		font-size: 12pt;
+	}
+}
+
+a.why-going-button{
+	transition: all 0.5s ease;
+	font-size: 24pt;
+	border: solid 4px white;
+	background-color: white;
+	color: $charcoal;
+	padding: 10px;
+	text-decoration: none;
+	margin-top:20vh;
+	margin-bottom:10vh;
+	&:hover{
+		background-color: transparent;
+		color: white;
+	}
+}
+
+
+
+div .home{
+}
+
+.wrapper{
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+}
+
+.dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+
+.dots li.active {
+  background: #fff;
+  opacity: 1;
+}
+
