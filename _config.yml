@@ -11,8 +11,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 assets:
-	js_compressor: uglifier
-	css_compressor: sass
+  js_compressor: uglifier
+  css_compressor: sass
 
 # Build settings
 markdown: kramdown
