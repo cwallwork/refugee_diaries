@@ -24,4 +24,3 @@ assets:
   css_compressor: sass
   cache: true
   gzip: [text/css, application/javascript]
-
