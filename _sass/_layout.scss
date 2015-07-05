@@ -104,14 +104,31 @@
 .contact-list,
 .social-media-list {
     list-style: none;
+    float: right;
+    display: inline-block;
     margin-left: 0;
+    font-size: 36pt;
+    color: #c500af;
+    text-align: right;
+}
+
+.social-media-list a{
+    color: #c500af;
+    text-decoration: none;
+    margin-right: 4px;
+
+    &:hover{
+        color: #760069;
+        text-decoration: none;
+    }
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
+    font-size: 36px;
+    color: #c500af;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+    padding: 0 2vw 0 3vw;
 }
 
 .footer-col {
@@ -121,18 +138,18 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    // width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    // width:         calc(20% - (#{$spacing-unit} / 2));
+    // float: left;
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    // width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    // width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {

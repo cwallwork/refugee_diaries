@@ -17,5 +17,11 @@ assets:
 # Build settings
 markdown: kramdown
 
-exclude: ['Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
-exclude: [vendor]
+exclude: ['vendor']
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
+  cache: true
+  gzip: [text/css, application/javascript]
+

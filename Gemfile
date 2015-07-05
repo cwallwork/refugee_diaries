@@ -8,3 +8,8 @@ gem 'jekyll-assets'
 gem 'coffee-script'
 gem 'uglifier'
 gem 'sass'
+
+gem 'thin'
+gem 'rake'
+gem 'rack-contrib'
+gem 'foreman'

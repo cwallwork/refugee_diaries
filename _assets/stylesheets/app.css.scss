@@ -11,11 +11,11 @@ $charcoal: #494949;
 	text-align: center;
 	}	
 
-	ul{
+	.banner ul{
 		float: left;
 	}
 			
-	li{
+	.banner ul li{
 			float: left;
 			list-style: none;
 			height: 80vh;
@@ -50,7 +50,7 @@ $charcoal: #494949;
 	padding-right: 0px;
 }
 p.why-description{
-	font-size: 20pt;
+	font-size: 18pt;
 	color:white;
 	width: 50%;
 	text-align: left;
@@ -83,9 +83,9 @@ p.why-description{
 	}
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 	.kat-ribbon{
-		width:20vw;
+		width:40vw;
 	}
 	#why-container p.why-description{
 		font-size: 10pt;
@@ -124,8 +124,8 @@ div .home{
 
 .dots {
   position: absolute;
-  left: 50%;
-  right: 0;
+  // left: 45%;
+  right: 45%;
   bottom: 20px;
   margin: auto;
 }
