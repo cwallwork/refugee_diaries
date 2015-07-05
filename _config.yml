@@ -14,3 +14,11 @@ github_username:  jekyll
 markdown: kramdown
 
 exclude: ['vendor']
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
+  cache: true
+  gzip: [text/css, application/javascript]
+
+
