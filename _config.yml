@@ -10,10 +10,6 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
-assets:
-  js_compressor: uglifier
-  css_compressor: sass
-
 # Build settings
 markdown: kramdown
 
@@ -22,5 +18,4 @@ exclude: ['vendor']
 assets:
   js_compressor: uglifier
   css_compressor: sass
-  cache: true
   gzip: [text/css, application/javascript]
