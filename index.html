@@ -5,9 +5,8 @@ layout: default
 <div class="home">
   <div class="banner">
     <ul>
-
       <li class="diaries-splash">
-        <div >
+        <div>
           <img id="world-pic"src="http://refugeediaries.com/wp-content/uploads/2015/06/world-1.png">
         </div>
       </li>
@@ -24,7 +23,7 @@ layout: default
           <p class="why-description">
               No story is more important to me than the story of refugees.
           </p>
-             <a class="why-going-button" href="{% post_url 2015-07-02-why-im-going %}">Read More</a>
+             <a class="why-going-button" href="{% post_url 2015-06-02-why-im-going %}">Read More</a>
           </p>
           <br> 
         </div>
@@ -66,11 +65,11 @@ layout: default
               <p>$$$$</p>
             </div>
           </div>
-          <div class="parallax__layer parallax_layer--base">
+          <div id="base2" class="parallax__layer parallax_layer--base">
             <div id="dollar-text">
               <p id="doll-text">Over 50% of the population in the Northern Triangle live on less than $4 a day.</p>
             </div>
-        </div>
+          </div>
       </div>
     </div>
       <div class="counter-container">
@@ -92,15 +91,26 @@ layout: default
         <label>mobile</label>
         <input type="text">
       </div>
-      <input type="submit">
+      <input id="submit" type="submit">
     </form>
     <img src="http://refugeediaries.com/wp-content/uploads/2015/06/refugee-sign-color.jpg">
   </div>
 
-
-  
-
-  
+  <div id="recent-diary">
+    <h1>My Recent Diary Updates</h1>
+    <ul id="recent-post-list">  
+      {% for post in site.posts limit:3 %}
+        <li>
+          <a href="{{post.path}}">
+          {% if post.image %}
+            <img src="{{post.image}}">
+          {% endif %}
+          <p>{{ post.title }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>  
 
   
 

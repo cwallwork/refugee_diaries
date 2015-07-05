@@ -15,13 +15,26 @@
 .odometer{
 	font-size:100pt;
 }
-@media(max-width:600px){
-  .odometer{
-    font-size: 38pt;
+@media(max-width:700px){
+  #counter .odometer{
+    font-size: 34pt;
   }
   #counter-text{
     font-size: 20pt;
   }
+}
+
+@media(max-width:800px){
+  #counter .odometer{
+    font-size: 50pt;
+  }
+}
+
+@media(max-width:450px){
+  .odometer{
+    font-size: 20pt;
+  }
+  #counter-text: 16pt;
 }
 @import url("//fonts.googleapis.com/css?family=Economica");
 .odometer.odometer-auto-theme, .odometer.odometer-theme-train-station {

@@ -1,0 +1,44 @@
+$main-purple: #c500af;
+$blue-grey-back: #cadce4;
+
+#recent-diary{
+	background: $blue-grey-back;
+	color: #006383;
+	text-align: center;
+	padding-top:5vh;	
+
+	& h1{
+		font-size:48pt;
+	}
+}
+
+#recent-post-list{
+	color:$main-purple;
+	background: $blue-grey-back;
+	padding: 0 5vw 10vh 5vw;
+
+	& li{
+		font-size: 22pt;
+		text-align: center;
+		height: 30%;
+		list-style-type: none;
+		height:30vh;
+		font-size: 20pt;
+		color: $main-purple;
+		margin-top: 5vh;
+		padding: 5vh;
+
+	}
+	& img{
+		-moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+		height: 25vh;
+		margin-bottom: 1.5vh;
+	}
+	& a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

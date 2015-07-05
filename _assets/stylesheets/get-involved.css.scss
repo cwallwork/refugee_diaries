@@ -1,3 +1,5 @@
+$main-purple: #c500af;
+
 .get-involved{
 	font-size: 52pt;
 	color:#00d332;
@@ -8,15 +10,29 @@
 .get-involved form{
 	margin:auto;
 	font-size:16pt;
-	color: #c500af;
+	color: $main-purple;
 }
 
 .get-involved form label{
 	display: inline-block;
 	width: 9%;
 	text-align:right;
-	padding-right:1%;
+	padding-right:3%;
 	min-width:65px;
+}
+
+.get-involved #submit{
+	transition: all 0.5s ease;
+	font-size: 24pt;
+	border: solid 4px $main-purple;
+	background-color: $main-purple;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	&:hover{
+		background-color: transparent;
+		color: $main-purple;
+	}
 }
 
 .get-involved form input{
