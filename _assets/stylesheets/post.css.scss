@@ -1,0 +1,33 @@
+.post-header h1{
+	margin-left:10%;
+}
+.post-meta{
+	font-size:16pt;
+	color: #c500af;
+	margin-left: 10%;
+}
+
+.post-content p{
+	font-size:24pt;
+	padding: 5%;
+	float:left;
+	margin: 0 10vw 0 10vw;
+}
+
+.share-links{
+	margin-left:10%;
+	font-size: 26pt;
+	& a{
+		width:10%;
+		color:white;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+		& i{
+			border-right: solid 2px white;
+			background: #c500af;
+			padding:25px;
+		}
+	}
+}

@@ -1,13 +1,15 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
+
 gem 'jekyll'
+gem 'sass'
 gem 'redcarpet'
 
 gem 'jekyll-assets'
 
 gem 'coffee-script'
 gem 'uglifier'
-gem 'sass'
 
 gem 'thin'
 gem 'rake'

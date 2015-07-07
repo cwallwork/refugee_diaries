@@ -59,7 +59,7 @@ layout: default
           </div>
         </div>
       </div>
-      <div id="group2" class="parallax__group">
+      <div id="group2" class="parallax__group parallax">
           <div id="back-2"class="parallax__layer parallax__layer--back">
             <div id="dollar-background">
               <p>$$$$</p>
@@ -96,12 +96,12 @@ layout: default
     <img src="http://refugeediaries.com/wp-content/uploads/2015/06/refugee-sign-color.jpg">
   </div>
 
-  <div id="recent-diary">
+  <div id="recent-diary" name="diary">
     <h1>My Recent Diary Updates</h1>
     <ul id="recent-post-list">  
       {% for post in site.posts limit:3 %}
         <li>
-          <a href="{{post.path}}">
+          <a href="{{post.url}}">
           {% if post.image %}
             <img src="{{post.image}}">
           {% endif %}

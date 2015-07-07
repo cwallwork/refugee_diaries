@@ -26,6 +26,7 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    margin-right: 10px;
 
     .menu-icon {
         display: none;
@@ -34,6 +35,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 12pt;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -94,6 +96,13 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    & a{
+        color: #c500af;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }    
+    }
 }
 
 .footer-heading {
@@ -107,7 +116,7 @@
     float: right;
     display: inline-block;
     margin-left: 0;
-    font-size: 36pt;
+    font-size: 24pt;
     color: #c500af;
     text-align: right;
 }
@@ -124,21 +133,23 @@
 }
 
 .footer-col-wrapper {
-    font-size: 36px;
+    font-size: 24px;
     color: #c500af;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
     padding: 0 2vw 0 3vw;
 }
 
+@media(max-width:450){
+    #foot-col-wrap span{
+        font-size: 12pt;
+    }
+}
+
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    
 }
 
 .footer-col-2 {

@@ -1,6 +1,6 @@
 .parallax{
 	perspective: 1px;
-	height: 100vh;
+	height: 60vh;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -9,6 +9,14 @@
 	height: 80vh;
 	position: relative;
 	transform-style: preserve-3d;
+}
+
+#group1{
+	height: 50vh;
+}
+
+#group2{
+	height: 60vh;
 }
 
 .parallax__layer{
@@ -28,8 +36,9 @@
 }
 
 #fence-background{
-	margin-top:3vh;
-	height: 60vh;
+	margin-top:25vh;
+	bottom:0px;
+	height: 40vh;
 	width: 100vw;
 	background-image: url(<%= asset_path "fence.svg" %>);
 	opacity: 0.2;
@@ -39,17 +48,17 @@
 }
 
 #northern-triangle-text{
-	margin-top:45vh;
+	margin-top:20vh;
 	padding: 0 10vw 0 10vw;
 	font-size: 24pt;
 	color: white;
 }
 
 #dollar-background{
-	margin-top:3vh;
+	margin-top:15vh;
 	width: 100vw;
 	line-height:200%;
-	font-size:256pt;
+	font-size:128pt;
 	color: #25512a;
 	text-align:center;
 	opacity:0.4;
@@ -63,8 +72,8 @@
 
 @media (max-width:450px ){
 	#northern-triangle-text{
-		margin-top: 10vh;
-		font-size: 14pt;
+		margin-top: 20vh;
+		font-size: 10pt;
 	}
 	#dollar-background p{
 		font-size: 80pt;
@@ -73,6 +82,13 @@
 	p#doll-text{
 		font-size: 14pt;
 		margin-top: 20vh;
+	}
+	#group1
+	{
+		height:vh40;
+	}
+	#group2{
+		height: vh30;
 	}
 }
 

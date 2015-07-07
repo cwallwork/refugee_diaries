@@ -7,9 +7,13 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
-
+  <div class="share-links">
+  <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+  <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+  <a href="http://pinterest.com"><i class="fa fa-pinterest"></i></a>
+	</div>
   <article class="post-content">
-    {{ content }}
+  		{{ content }}
   </article>
 
 </div>

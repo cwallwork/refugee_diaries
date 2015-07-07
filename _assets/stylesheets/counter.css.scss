@@ -8,8 +8,9 @@
 
 #counter{
   margin:auto;
-  padding: 0 10vw 0 10vw;
+  padding: 15vh 10vw 0 10vw;
   text-align: center;
+  z-index: 100;
 }
 
 .odometer{
@@ -26,7 +27,7 @@
 
 @media(max-width:800px){
   #counter .odometer{
-    font-size: 50pt;
+    font-size: 34pt;
   }
 }
 
